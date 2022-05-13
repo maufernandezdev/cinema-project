@@ -1,0 +1,67 @@
+body {
+    background-color: #000000;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ddlop {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.ddlfecha {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 10pt;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.btnes {
+    font-family: 'Kanit', sans-serif;
+    font-size: 9pt;
+    padding: 1rem;
+    background-color: #DCDCDC;
+    color: #000000;
+}
+
+.table{
+    width: 40%;
+    display:block;
+    margin: 0 auto;
+    background-color: #000000;
+}
+.td {
+    width: 30%;
+    font-family: 'Kanit', sans-serif;
+    color: #F8F8FF;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.td2{
+    width: 50%;
+    font-family: 'Kanit', sans-serif;
+    color: #F8F8FF;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.val{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.4rem;
+}

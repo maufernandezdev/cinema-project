@@ -1,0 +1,173 @@
+﻿body {
+}
+
+html {
+    font-size: 62.5%; /*1 REM = 10 PX*/
+}
+
+
+/*¨DETALLE DE VENTAS*/
+
+
+.contenido-dv {
+    margin:0 auto;
+    margin-top: 15rem;
+    padding: 1rem 0;
+    width: 110rem;
+    height: 60rem;
+    
+    
+}
+.list-select {
+    
+    position:relative;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    width: 90%;
+    height: 31rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    background: transparent;
+    
+}
+
+
+.filtro-v {
+    margin:auto;
+    justify-content: space-between;
+    width: 600px;
+    height: 12rem;
+    
+    background: #24303c;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+.filtro-cv {
+
+    margin: auto;
+    justify-content: space-between;
+    width: 750px;
+    height: 12rem;
+    
+    background: #24303c;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.filtro-sv {
+    margin: auto;
+    justify-content: space-between;
+    width: 500px;
+    height: 12rem;
+    background: #24303c;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+
+.dventas {
+    padding: .5rem;
+    text-align: center;
+    width: 40%;
+    max-width: 50%;
+    height: 30rem;
+    float: left;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.dventas-a {
+    padding: .5rem;
+    text-align: center;
+    width: 35%;
+    height: 30rem;
+    float: left;
+    
+    background: #FFFFFF;
+    background:transparent;
+    border-radius: 5px;
+}
+
+.totaldv {
+    display: inline-block;
+    
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    background: transparent;
+}
+
+.totaldv-a {
+    display: inline-block;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    background: transparent;
+}
+
+.total-venta {
+    
+    text-align: center;
+    width: 20%;
+    height: 9rem;
+    float: left;
+    padding:.5rem;
+    margin-bottom: .5rem; 
+    margin-right: .5rem;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.content-ventas {
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    width: 95%;
+    height: 42rem;
+      
+}
+
+.grid-select {
+
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    width: 450px;
+    top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: #FFFFFF;
+    margin:auto;
+}
+
+    .grid-select td {
+        padding: 1rem;
+        border: 1px solid #c1c1c1;
+        color: #444;
+        font-size: 1.2rem;
+    }
+    .grid-select th {
+        padding: 4px 2px;
+        color: #FFFFFF;
+        background: linear-gradient(#02026C,#868BC5);
+        background: linear-gradient(red, white);
+        border: 1px solid #c1c1c1;
+        font-size: 1em;
+        text-align: center;
+    }
+
+h1 {
+    width: 50px;
+    margin-top: -14px;
+    margin-left: 1.5rem;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-size: 2rem;
+}

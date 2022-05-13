@@ -1,0 +1,38 @@
+﻿body {
+    background-color: #000000;
+}
+
+.contenedor {
+    width: 90rem;
+    display: block;
+    margin: 10rem auto;
+    color: #FFFFFF;
+}
+
+    .contenedor p {
+        font-size: 1.5rem;
+    }
+
+    .contenedor h2 {
+        text-align: center;
+    }
+
+.items {
+    padding-top: 6rem;
+    width: 45rem;
+    height: 20rem;
+    text-align: center;
+    font-size: 2rem;
+    border: solid 1px #FFFFFF;
+}
+
+.items-art{
+    text-align:center;
+    font-size:2rem;
+    margin-top:3rem;
+}
+
+.img {
+    width: 45rem;
+    height: 30rem;
+}

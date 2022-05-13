@@ -1,0 +1,240 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+html {
+    font-size: 62.5%; /*1 REM = 10 PX*/
+}
+
+.principal {
+    margin: auto;
+    margin-top: 15rem;
+    width: 110rem;
+    height: 60rem;
+    
+}
+
+.pelis {
+    height: 18%;
+    width: 51.7%;
+    float: left;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 4rem;
+    text-align: center;
+    font-family: Verdana;
+    padding: 1rem;
+    border-radius: 4px;
+    /* background-color: #EAEAEA; */
+    /* background-color: transparent;*/
+    /* border: solid 1px #EAEAEA; */
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.pelis:hover{
+
+    transition:0.5s;
+    transform:translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+
+.MejorSucursal {
+    height: 18%;
+    width: 25%;
+    border-radius: 1px;
+    float: left;
+    margin: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    padding: 1rem;
+    border-radius: 4px;
+    /* background-color: #EAEAEA;*/
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+    .MejorSucursal:hover {
+        transition: 0.5s;
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+        /* cursor: pointer;   */
+    }
+
+.Recaudacion {
+    height: 14%;
+    width: 25%;
+    border-radius: 1px;
+    float: left;
+    margin: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    padding: 1rem;
+    border-radius: 4px;
+    /* background-color: #EAEAEA; */
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+    .Recaudacion:hover {
+        transition: 0.5s;
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+        /*  cursor: pointer;  */
+    }
+
+#recM {
+    margin-top: -38rem;
+}
+
+#recA {
+    margin-top: -38rem;
+}
+
+.promo {
+    height: 18%;
+    width: 25%;
+    border-radius: 1px;
+    float:left;
+    margin: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    padding: 1rem;
+    border-radius: 4px;
+    /* background-color: #EAEAEA; */
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+    .promo:hover {
+        transition: 0.5s;
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    }
+
+
+
+.Clientes {
+    
+    height: 18%;
+    width: 25%;
+    border-radius: 1px;
+    float: left;
+    margin: 1rem;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 4px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+}
+
+    .Clientes:hover {
+        transition: 0.5s;
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+        /* cursor: pointer; */
+    }
+
+.Cli {
+
+    float:left;
+    text-align: center;
+    width: 50%;
+     
+}
+
+
+.pel {
+    float: left;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 33.3%;
+}
+
+
+
+
+
+.imagen-top {
+    width: 100px;
+    height: 100px;
+}
+
+.labelSimple {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    /* border: solid 1px #FFFFFF; */
+    margin: 0.5rem;
+    color: #000000;
+}
+
+.labels {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #000000;
+    /* border: solid 1px #4a4a4a; */
+    border-radius: 2.5px;
+    background: #2FE30F;
+}
+
+.labelsRojo {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #000000;
+    /* border: solid 1px #4a4a4a;  */
+    border-radius: 2.5px;
+    background: #FF2E27;
+}
+.labelsCeleste {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #000000;
+    /* border: solid 1px #4a4a4a;  */
+    border-radius: 2.5px;
+    background: #1e90ff;
+}
+.labelsNar {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #000000;
+    /* border: solid 1px #4a4a4a;  */
+    border-radius: 2.5px;
+    background: #FF9312;
+}
+
+.item-temp {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+.titulo {
+    color: #FFFFFF;
+    font-size: 2rem;
+    border-radius: 2.5px;
+    background: #0A1D5D;
+}
+

@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="Vistas.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/principal.css" rel="stylesheet" type="text/css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="header">
+            <!-- ---LOGO--- !-->
+            <div id="icono-header">
+                <a href="#">
+                    <img id="logo-header" src="imagenes/logo.png" /></a>
+            </div>
+            <!-- ---BOTONES--- !-->
+            <div id="menu" class="nav">
+                <nav>
+                    <ul id="menup">
+                        <li class="imp"><a class="link" href="Inicio.aspx">INICIO</a></li>
+                        <li class="imp"><a href="Sucursales.aspx" id="sucursal" class="link dropdown-toggle">SUCURSALES</a>
+                            <!-- ---MENÚ DESPLEGABLE--- !-->
+                            <ul>
+                                <li><a href="Sucursaltom.aspx">TOM</a></li>
+                                <li><a href="Sucursalabasto.aspx">ABASTO</a></li>
+                                <li><a href="Sucursalunicenter.aspx">UNICENTER</a></li>
+                                <li><a href="Sucursaldot.aspx">DOT</a></li>
+                                <li><a href="Sucursalaltopalermo.aspx">ALTO PALERMO</a></li>
+                            </ul>
+                        </li>
+                        <li class="imp"><a class="link" href="Precios.aspx">PRECIOS</a></li>
+                        <li class="imp"><a class="link" href="Promociones.aspx">PROMOCIONES</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <asp:Label runat="server" ID="lbluser"></asp:Label>
+            <!-- ---USUARIO--- !-->
+            <div class="user">
+                <a href="#">
+                    <i id="User" class="fas fa-user fa-2x white-text dropdown-toggle"></i>
+                </a>
+                <!-- ---FORM USUARIO--- !-->
+                <asp:Panel runat="server" ID="ddm" CssClass="dropdown-menu dropdown-menu-lg-right mr-5 pl-2 pr-2 text-md-center">
+                    <div class="form-group">
+                        <label for="correo">Email</label>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="correo" placeholder="Email@example.com"></asp:TextBox>
+                        <!-- VALIDA SI ES UN CORREO -->
+                        <asp:RegularExpressionValidator runat="server" ID="reCorreo" ControlToValidate="correo" ValidationGroup="login" CssClass="red-text" Text="Ingrese un correo válido" ValidationExpression="^[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"></asp:RegularExpressionValidator>
+                    </div>
+                    <div class="form-group">
+                        <label for="contraseña">Contraseña</label>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="contraseña" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
+                        <!-- VALIDA SI INGRESA ALGO -->
+                        <asp:RequiredFieldValidator runat="server" ID="rfContraseña" CssClass="red-text" ControlToValidate="contraseña" ValidationGroup="login" Text="Ingrese contraseña"></asp:RequiredFieldValidator>
+                    </div>
+                    <asp:Button runat="server" CssClass="btn btn-primary purple-gradient" Text="Iniciar Sesión" ID="btnIniciar" data-toggle="modal" data-target="#modalCuenta" ValidationGroup="login" OnClick="btnIniciar_Click" /><br />
+                    <asp:Label ID="lblerror" CssClass="red-text" runat="server"></asp:Label>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Registro.aspx">Registrarse</a>
+                </asp:Panel>
+
+                <asp:Panel runat="server" ID="logueado" CssClass="d-none">
+                    <asp:Button runat="server" ID="btnPerfil" CssClass="dropdown-item" Text="Perfil" OnClick="btnPerfil_Click" />
+                    <asp:Button runat="server" ID="btnCompras" CssClass="dropdown-item" Text="Compras" OnClick="btnCompras_Click" />
+                    <asp:Button runat="server" ID="btnCerrar" CssClass="dropdown-item" Text="Cerrar Sesión" OnClick="btnCerrar_Click" />
+                </asp:Panel>
+            </div>
+            <script>
+                $('#User').on("click", function () {
+                    $('#ddm').toggle()
+                    $('#logueado').toggle()
+                });
+            </script>
+        </header>
+        <asp:ContentPlaceHolder ID="contenido" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer>
+            <div class="footer">
+                <!-- ---SECCIONES FOOTER--- !-->
+                <div class="content">
+                    <p>SUCURSALES</p>
+                    <nav class="n-footer">
+                        <ul>
+                            <li><a href="Sucursaltom.aspx">TORTUGAS OPEN MALL</a></li>
+                            <li><a href="Sucursalabasto.aspx">ABASTO</a></li>
+                            <li><a href="Sucursaldot.aspx">DOT</a></li>
+                            <li><a href="Sucursalunicenter.aspx">UNICENTER</a></li>
+                            <li><a href="Sucursalaltopalermo.aspx">ALTO PALERMO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="content">
+                    <p>BENEFICIOS</p>
+                    <nav class="n-footer">
+                        <ul>
+                            <li><a href="#">CINETECA PREMIUM</a></li>
+                            <li><a href="Promociones.aspx">PROMOCIONES</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="content">
+                    <p>NOSOTROS</p>
+                    <nav class="n-footer">
+                        <ul>
+                            <li><a href="#">CONTACTO</a></li>
+                            <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+                            <li><a href="#">TRABAJÁ CON NOSOTROS</a></li>
+                            <li><a href="#">EQUIPO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="logo-footer">
+                    <a href="#">
+                        <img id="icono-footer" src="imagenes/logo.png" /></a>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">
+                © 2020 Copyright:
+    <a href="#">Grupo N°11</a>
+            </div>
+        </footer>
+    </form>
+    
+   
+</body>
+</html>

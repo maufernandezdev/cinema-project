@@ -1,0 +1,33 @@
+﻿body{
+    background-color:#000000;
+}
+
+.items{
+    display:block;
+    margin: 10rem auto;
+    max-width:96rem;
+}
+
+.contenedor-item {
+    display: flex;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    border: solid 3px #838789;
+    background-color: #FFFFFF;
+}
+
+.nombre{
+    font-weight:bold;
+}
+
+.img-promo {
+    margin-right: 1rem;
+    width: 15rem;
+    height: 19rem;
+}
+
+.n-promo {
+    margin-top: 3rem;
+    font-family: 'Kanit', sans-serif;
+    font-size:1.6rem;
+}

@@ -1,0 +1,73 @@
+﻿body {
+    background-color: #000000;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #FFFFFF;
+    margin: 2rem 0;
+}
+
+.subt {
+    font-family: 'Kanit', sans-serif;
+    color: #FFFFFF;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+.ddls {
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 5rem;
+}
+
+.ddlsc {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+    .ddlsc option {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 200;
+    }
+
+.btnddls {
+    font-family: 'Kanit', sans-serif;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.lblerror {
+    font-weight: 300;
+    font-size: 1.6rem;
+    font-family: 'Kanit', sans-serif;
+    color: #E72323;
+    margin-left: 5rem;
+}
+
+.imgpelis {
+    width: 20rem;
+    height: 30rem;
+}
+
+.imgpelis_ {
+    width: 20rem;
+    height: 30rem;
+    margin-right: 2rem;
+}
+
+.peliculas {
+    margin-top: 10rem;
+}
+
+.cont-peli {
+    max-width: 23rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+}

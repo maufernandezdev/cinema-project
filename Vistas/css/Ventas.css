@@ -1,0 +1,260 @@
+﻿body {
+    
+}
+
+html {
+    font-size: 62.5%; /*1 REM = 10 PX*/
+}
+
+
+.contenido {
+    margin: auto;
+    margin-top: 15rem;
+    padding: 1rem 0;
+    width: 90rem;
+    height: 60rem;
+    
+}
+
+.listado {
+    /*position:absolute;*/ /* para ponerlo necesito hacer otro para detalle de ventas*/
+    position: relative;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    width: 90%;
+    height: 31rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    background:transparent;
+}
+
+.grid {
+    
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    width: 95%;
+    top: 1rem;
+    margin-bottom:1rem;
+    margin-left:1rem;
+    margin-right:1rem;
+    background:#FFFFFF;
+    
+}
+    .grid td {
+        padding: 1rem;
+        border: 1px solid #c1c1c1;
+        color: #444;
+        font-size: 1.2rem;
+    }
+    .grid th {
+        padding: 4px 2px;
+        color: #FFFFFF;
+        background: linear-gradient(#02026C,#868BC5);
+        border: 1px solid #c1c1c1;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .grid th a{
+                color:white;
+               text-decoration:none;
+
+    }
+    .grid th a:hover{
+                     color:#444;
+                     text-decoration:none;
+
+    }
+    .grid .alt{background:linear-gradient(#fff,#e6e6e6);}
+/* #e6e6e6*/
+
+.filtros {
+
+    margin: auto;
+    width: 850px;
+    height: 12rem;
+    background: #24303c;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+    .filtros h4 {
+        margin-left:1.5rem;
+        font-size: 2rem;
+        margin-bottom: 0;
+        color: #FFFFFF;
+    }
+
+.input[type=text] {
+    width: 100%;
+    border: 1px solid #1f53c5;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    color: #FFFFFF;
+    background: #24303c;
+    font-size:1.5rem;
+    
+}
+
+    .input[type=text]:focus {
+        border-color: #594E4E;
+        box-shadow: 0 0 8px 0 #594E4E;
+    }
+
+input[type=date] {
+    width: 100%;
+    border: 1px solid #1f53c5;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    background: #24303c;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.input[type=date]:focus {
+    border-color: #594E4E;
+    box-shadow: 0 0 8px 0 #594E4E;
+}
+
+
+.item {
+    margin: 1rem;
+    float: left;
+    width: 155px;
+    text-align: center;
+}
+.boton {
+    
+    position: relative;
+    padding:1rem 2rem;
+    height:40px;
+    text-decoration: none;
+    background: #1f53c5;
+    transition: 0.5s, background 0.5s;
+    border: none;
+    color: #FFFFFF;
+    margin:0;
+    font-size: 1.5rem;
+
+}
+
+.boton-rojo {
+    position: relative;
+    padding: 1rem 2rem;
+    height: 40px;
+    text-decoration: none;
+    background: #FF0202;
+    transition: 0.5s, background 0.5s;
+    border: none;
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+    /*  .boton:hover {
+        color: #000000;
+        background-color: transparent;
+        border: 2px solid #aaa;
+    }*/
+
+
+    .boton:active {
+        box-shadow: inset 0 0 20px #FFFFFF;
+        
+    }
+
+.btn-item {
+    
+    
+    margin-top: 1rem;
+    margin-left:1rem;
+    float:left;
+    
+}
+/* validadores */
+
+.validator-rojo {
+    color: #FF0202;
+    font-size:1.3rem;
+    padding:.5rem;
+    
+    
+}
+.campoVacio {
+    display:block;
+    position:absolute;
+    padding:.5rem;
+    margin-top:7rem;
+    margin-left:1rem;
+    float:left;
+    color: #FF0202;
+    font-size: 1.3rem;
+    padding: 1rem;
+    
+}
+
+.ddl-venta {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    margin-top:2rem;
+    margin-left:1rem;
+
+    float: left;
+    padding: 0 0 0 .5rem;
+    background: #2c3e50;
+    overflow: hidden;
+    line-height: 3;
+    border-radius: .25em;
+}
+
+.ddl-estilo {
+    outline: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: 0 !important;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0 0 0 .5em;
+    color:#FFFFFF;
+    font-size:1.1rem;
+    background: #2c3e50;
+    letter-spacing:.8px;
+    cursor:pointer;
+
+}
+
+.ddl-venta::after{
+
+    content:'\25bc';
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    padding:0 1em;
+    background:#34495e;
+    pointer-events:none;
+}
+
+.ddl-venta:hover::after{
+
+
+    color:#FFFFFF;
+}
+
+.ddl-venta::after{
+
+    transition:2s all ease;
+}
+

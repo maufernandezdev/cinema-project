@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administrador.master.cs" Inherits="Vistas.Administrador" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/administrador.css" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="form">
+        <header class="header">
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="Inicio_Admin.aspx">Inicio</a></li>
+                    <li><a href="#">Ventas</a>
+                        <ul class="submenu">
+                            <li><a href="ventas_listado.aspx">Listado</a></li>
+                            <li><a href="ventas_DetalleDeVenta.aspx">Detalles de venta</a></li>
+                            <li><a href="">Cancelar</a>
+                                <ul class="submenu">
+                                    <li><a href="ventas_BajaVentas.aspx">Ventas</a></li>
+                                    <li><a href="baja_detalle_ventas.aspx">Detalle de venta</a></li>
+                                    <li><a href="baja_detalle_ventasArts.aspx">Detalle de venta artículos</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="peliculas_alta.aspx">Películas</a></li>
+                    <!-- <ul class="submenu">
+                <li><a href="#">Alta</a></li>
+                <li><a href="#">Baja</a></li>
+                <li><a href="#">Modificación</a></li>
+                 </ul>-->
+
+                    <li><a href="articulos_alta.aspx">Artículos</a>
+                        <!-- <ul class="submenu">
+                <li><a href="#">Listado</a></li>
+                <li><a href="#">Alta</a></li>
+                <li><a href="#">Baja</a></li>
+                <li><a href="#">Modificación</a></li>
+                 </ul>-->
+                    </li>
+                    <li>
+                        <a href="PerfilAdmin.aspx">Perfil
+                        </a>
+                    </li>
+                    <li>
+                        <div class="_user">
+                            <a href="#" class="user">
+                                <i id="User" class="fas fa-user fa-2x dropdown-toggle"></i>
+                            </a>
+                            <asp:Panel runat="server" ID="logueado" CssClass="dropdown-menu dropdown-menu-right pl-2 pr-2 text-md-center">
+                                <asp:Button runat="server" ID="btnCerrar" CssClass="dropdown-item" Text="Cerrar Sesión" OnClick="btnCerrar_Click" />
+                            </asp:Panel>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <script>
+            $('#User').on("click", function () {
+                $('#logueado').toggle()
+            });
+        </script>
+        <asp:ContentPlaceHolder ID="Contenido" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <footer class="footer">
+            <div>Copyright ©Grupo 11 UTN FRGP   </div>
+        </footer>
+
+    </form>
+</body>
+</html>

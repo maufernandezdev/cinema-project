@@ -1,0 +1,318 @@
+﻿body {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 62.5%; /*1 REM = 10 PX*/
+}
+
+
+.contenido {
+    position: relative;
+    margin: auto;
+    margin-top: 15rem;
+    padding: 1rem 0;
+    width: 130rem;
+    height: 60rem;
+    
+    
+}
+
+.registro {
+
+    float:left;
+    width:400px;
+    height:51.2rem;
+    background:#24303c;
+    padding:1rem;
+    margin:auto;
+    margin-top:2rem;
+    border-radius:4px;
+    font-family:Calibri;
+    color:white;
+    box-shadow:7px 13px 37px #000;
+    
+
+   
+}
+
+
+
+.registro h4 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.controles {
+    width: 100%;
+    background: #24303c;
+    padding:0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0rem;
+    margin-top:.7rem;
+    border: 1px solid #1f53c5;
+    font-family: Calibri;
+    font-size:1.5rem;
+    color:#FFFFFF;
+}
+
+
+
+.registro .botons {
+    width: 100%;
+    background: #1f53c5;
+    border:none;
+    padding:10px;
+    color:#FFFFFF;
+    margin:0.5rem 0;
+    font-size:1.5rem;
+
+}
+
+.listaPelis {
+    position: relative;
+    width: 67%;
+    height: 40rem;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    
+    
+}
+.filtro-p {
+    position:relative;
+    margin: auto;
+    width: 65.5%;
+    height: 10rem;
+    background: #24303c;
+    border-radius:4px;
+    box-shadow: 7px 13px 37px #000;
+    float: left;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.grid {
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    width: 97%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    background: #FFFFFF;
+}
+
+    .grid td {
+        padding: .8rem;
+        border: 1px solid #c1c1c1;
+        color: #444;
+        font-size: 1.2rem;
+    }
+
+    .grid th {
+        padding: 4px 2px;
+        color: #FFFFFF;
+        background: linear-gradient(#02026C,#868BC5);
+        border: 1px solid #c1c1c1;
+        font-size: 1em;
+        text-align: center;
+    }
+
+        .grid th a {
+            color: white;
+            text-decoration: none;
+        }
+
+            .grid th a:hover {
+                color: #444;
+                text-decoration: none;
+            }
+
+    .grid .alt {
+        background: linear-gradient(#fff,#e6e6e6);
+    }
+
+
+.input[type=text] {
+
+    width: 100%;
+    border: 1px solid #1f53c5;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    color: #FFFFFF;
+    background: #24303c;
+    font-size: 1.5rem;
+}
+
+
+
+    .input[type=text]:focus {
+        border-color: #594E4E;
+        box-shadow: 0 0 8px 0 #594E4E;
+    }
+
+.item {
+    margin-top:.5rem;
+    margin-left:1rem;
+    float: left;
+    width: 22%;
+    margin-bottom: 0;
+    
+}
+
+.boton {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #1f53c5;
+    transition: 0.5s, background 0.5s;
+    border: none;
+    color: #FFFFFF;   
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+    /*  .boton:hover {
+        color: #000000;
+        background-color: transparent;
+        border: 2px solid #aaa;
+    }*/
+
+
+    .boton:active {
+        box-shadow: inset 0 0 20px #FFFFFF;
+    }
+
+.btn-item {
+    display: inline-block;
+    position: relative;
+    margin-top:.5rem;
+    margin-left:1rem;
+    float: left;
+}
+.editarMed {
+    text-align: center;
+    width: 12rem;
+}
+.editarMe {
+    text-align: center;
+    width: 9rem;
+}
+
+.editarPeq {
+    text-align:center;
+    width: 3.5rem;
+}
+
+.editarGrande {
+    text-align: center;
+    width: 24rem;
+}
+
+.editarPrecio {
+    text-align: center;
+    width: 5rem;
+}
+
+.editarEstado {
+    text-align: center;
+    width: 7rem;
+}
+.editarUrlArt {
+    text-align: center;
+    width: 20rem;
+}
+
+h1 {
+    width: 50px;    
+    margin-left: 1.5rem;
+    margin-top:1rem;
+    color: #FFFFFF;
+    font-family: Calibri;
+    font-size: 2rem;
+   
+}
+
+.validator-rojo {
+    position:relative;
+    color: #FF0202;
+    font-size: 1.3rem;
+    float:right;
+    top: 0px;
+    left: 0px;
+}
+
+.valid-rojo {
+    position: relative;
+    color: #FF0202;
+    font-size: 1.3rem;
+    float:left;
+}
+
+.campoVacio {
+    
+    
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    float: left;
+    color: #FF0202;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.perfil {
+    position: relative;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 45%;
+    background: #FFFFFF;
+    box-shadow: 7px 13px 37px #000;
+    background: #24303c;
+    border-radius: 4px;
+    color: Beige;
+}
+
+.label-perfil{
+
+    
+    font-size:2rem;
+    
+}
+
+.datos-perfil {
+    
+    margin:auto;
+
+}
+.foto-perfil{
+
+    float:left;
+    border-radius:50%;
+    box-shadow: 0 0 0 8px rgba(0,0,0,.06);
+    margin:2rem 3rem;
+    transition:.2s;
+}
+
+.foto{
+    
+    border-right:1px solid #ddd;
+    
+}

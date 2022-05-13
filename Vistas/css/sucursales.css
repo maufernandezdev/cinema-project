@@ -1,0 +1,22 @@
+﻿body{
+    background-color:#000000;
+}
+.contenedor{
+    margin-left:6rem;
+    margin-top:3rem;
+}
+
+.imgsucursales{
+    width: 60rem;
+    height:40rem;
+    margin-right:3rem;
+    margin-top:2rem;
+}
+
+.lblsucursal {
+    color: #FFFFFF;
+    font-family: 'Kanit', sans-serif;
+    margin-left:23rem;
+    font-size:1.8rem;
+    font-weight:300;
+}

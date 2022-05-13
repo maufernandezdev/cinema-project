@@ -1,0 +1,274 @@
+body {
+    background-color: #000000;
+}
+
+.center {
+    display: block;
+    margin: 0 10rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #F8F8FF;
+    font-size: 20pt;
+    text-align: center;
+    margin:3rem 0;
+}
+
+h4 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #F8F8FF;
+    font-size: 14pt;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #F8F8FF;
+    text-align: center;
+}
+
+h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+td {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 14pt;
+    text-align: left;
+}
+
+
+.subt {
+    font-family: 'Kanit', sans-serif;
+    color: #FFFFFF;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+.ddls {
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 5rem;
+}
+
+.ddla {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.ddlsc option {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+}
+
+.ddlart {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 10pt;
+    border-bottom: solid 1px #FFFFFF;
+}
+
+.btnddls {
+    font-family: 'Kanit', sans-serif;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+.gridas {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+
+.header-gv, .item-gv {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #F8F8FF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridas td {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #F8F8FF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridas th {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #F8F8FF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridas td a {
+    color: #F8F8FF;
+    font-size: 1.5rem;
+}
+
+    .gridas td a:hover {
+        color: #FFFFFF;
+    }
+
+.gridart {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.header-gv, .item-gv {
+    width: 20rem;
+    height: 4rem;
+    font-weight: 300;
+    color: #F8F8FF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridart td {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #F8F8FF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridart th {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #F8F8FF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.gridart td a {
+    color: #F8F8FF;
+    font-size: 1.5rem;
+}
+
+    .gridart td a:hover {
+        color: #FFFFFF;
+    }
+
+
+.imgasientos {
+    width: 370px;
+    height: 310px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imgart {
+    width: 225px;
+    height: 225px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imgprom {
+    width: 225px;
+    height: 225px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.list {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.lv-item1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    
+}
+
+.lv-item2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+.btnes {
+    font-family: 'Kanit', sans-serif;
+    font-size: 9pt;
+    padding: 1rem;
+    background-color: #DCDCDC;
+    color: #000000;
+}
+
+.btnlvpr {
+    font-family: 'Kanit', sans-serif;
+    font-size: 9pt;
+    padding: 1rem;
+    background-color: #DCDCDC;
+    color: #000000;
+}
+
+.btnlvart {
+    font-family: 'Kanit', sans-serif;
+    font-size: 9pt;
+    padding: 1rem;
+    background-color: #DCDCDC;
+    color: #000000;
+}
+
+.txtpr {
+    padding: 1rem;
+}
+
+.table, th, td {
+    width: 26%;
+    font-family: 'Kanit', sans-serif;
+    color: #F8F8FF;
+    font-size: 256px;
+    text-align: left;
+}
+
+.td {
+    width: 30%;
+    font-family: 'Kanit', sans-serif;
+    color: #F8F8FF;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.tit{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #F8F8FF;
+    font-size: 20pt;
+    text-align: center;
+    margin:3rem 0;
+}

@@ -1,0 +1,42 @@
+﻿body {
+    background-color: #000000;
+}
+
+h2 {
+    margin-top: 5rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.msglogin {
+    width:35rem;
+    display:block;
+    margin: 3rem auto;
+    color:red;
+    font-size:1.6rem;
+}
+
+.grid {
+    display: block;
+    margin: 2rem auto;
+    max-width: 50rem;
+}
+
+.header-gv, .item-gv {
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid a {
+    color: #59656A;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+    .grid a:hover {
+        color: #FFFFFF;
+    }

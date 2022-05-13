@@ -1,0 +1,27 @@
+﻿body {
+    background-color: #000000;    
+}
+
+.form-reg {
+    display: block;
+    margin: 5rem auto;
+    border: 6px outset #FFFFFF;
+    padding: 2rem 1rem;
+}
+
+.subt {
+    color:#FFFFFF;
+    text-align:center;
+    margin-bottom:3rem;
+}
+
+.msgerror {
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.msglbl {
+    font-size: 1.2rem;
+    font-family: 'Kanit', sans-serif;    
+}

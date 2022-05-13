@@ -1,0 +1,129 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../imagenes/fondo/fondo5.jpg) #CCC no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+html {
+    font-size: 62.5%; /*1 REM = 10 PX*/
+}
+
+.header {
+    /* background: #000000; */
+    background: transparent;
+    padding: 1rem 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav {
+    width: 1000px;
+    margin: 30px auto;
+    background: #FFFFFF;
+}
+
+    .nav ul {
+        list-style: none;
+    }
+
+.menu > li {
+    display: inline-block;
+}
+
+    .menu > li > a {
+        display: block;
+        padding: 1.5rem 2rem;
+        color: #353535;
+        font-family: 'Lucida Console';
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+
+.menu li div a {
+    color: #000000;
+}
+
+    .menu li a:hover, .menu li div a:hover {
+        color: #30F410;
+        transition: all 0.3s;
+    }
+
+
+
+
+/*submenu*/
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #4a4a4a;
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+
+
+    .submenu li a {
+        display: block;
+        padding: 15px;
+        color: #FFFFFF;
+        font-family: 'Lucida Console';
+        text-decoration: none;
+        font-size: 1.4rem;
+        border: solid 1px #FFFFFF;
+    }
+
+
+
+.nav li ul li ul {
+    width: 100%;
+    left: 100%;
+    top: 66.4%;
+}
+
+.menu li:hover > ul {
+    display: block;
+    opacity: 1;
+}
+
+#User {
+    margin-top: 2rem;
+}
+
+._user {
+    margin-left: 39rem;
+}
+
+#logueado {
+    margin-top: -7rem;
+    margin-right: 22rem;
+    font-family: 'Lucida Console';
+}
+
+/*Footer*/
+
+.footer {
+    background: #f2f2f2;
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 10rem;
+    font-family: Verdana;
+    font-size: 1.2rem;
+}
+
+/*Main*/
+.main {
+    padding-top: 100%;
+}
